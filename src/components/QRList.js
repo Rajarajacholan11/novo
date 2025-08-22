@@ -2,10 +2,10 @@ import { useState } from "react";
 import { ChevronRight, ChevronDown, ChevronUp, CircleCheck } from "lucide-react";
 
 export default function QRList() {
-  const [activeTab, setActiveTab] = useState("active"); // "active" | "requests"
-  const [expanded, setExpanded] = useState(null); // which request row is expanded
-
-  // Active QR data
+  const [activeTab, setActiveTab] = useState("active"); 
+  const [expanded, setExpanded] = useState(null); 
+  
+    // qr data
   const activeQRCodes = [
     {
       id: "Q201946579",
@@ -24,7 +24,7 @@ export default function QRList() {
     },
   ];
 
-  // QR Requests data
+  //  qr request data
   const qrRequests = [
     {
       id: 1,
@@ -44,7 +44,6 @@ export default function QRList() {
 
   return (
     <div className="bg-white rounded-xl shadow p-4 sm:p-6 flex flex-col">
-      {/* Tabs */}
       <div className="flex flex-col sm:flex-row mb-4 border border-green-600 rounded-lg overflow-hidden">
         <button
           onClick={() => setActiveTab("active")}
@@ -68,7 +67,7 @@ export default function QRList() {
         </button>
       </div>
 
-      {/* Active QR Codes List */}
+      {/* qr code list */}
       {activeTab === "active" && (
         <div className="flex-1 space-y-3 overflow-y-auto">
           {activeQRCodes.map((item, index) => (
@@ -96,12 +95,12 @@ export default function QRList() {
         </div>
       )}
 
-      {/* QR Code Requests List */}
+      {/* request list */}
       {activeTab === "requests" && (
         <div className="flex-1 space-y-4 overflow-y-auto">
           {qrRequests.map((req) => (
             <div key={req.id} className="border border-gray-200 rounded-lg p-3">
-              {/* Top Row */}
+              {/* top row */}
               <div
                 className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 cursor-pointer"
                 onClick={() =>
@@ -146,7 +145,7 @@ export default function QRList() {
                 </div>
               </div>
 
-              {/* Expanded Status */}
+              {/* expansion content */}
               {expanded === req.id && (
                 <div className="mt-3 bg-green-50 rounded-lg p-3 space-y-2">
                   <p className="text-sm text-gray-500">○ Awaiting Production</p>
