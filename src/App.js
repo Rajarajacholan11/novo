@@ -6,8 +6,7 @@ import QRPage from "./pages/QRPage";
 
 function App() {
   return (
-    <BrowserRouter basename="/novo">
-    <Router>
+    <Router basename="/novo">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/history" element={<History />} />
@@ -16,7 +15,6 @@ function App() {
 
       </Routes>
     </Router>
-    </BrowserRouter>
   );
 }
 
