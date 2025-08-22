@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Rajarajacholan11/novo.git/static/css/main.e6c13ad2.css",
+    "main.js": "/Rajarajacholan11/novo.git/static/js/main.08117da4.js",
+    "static/js/453.45d9b1a4.chunk.js": "/Rajarajacholan11/novo.git/static/js/453.45d9b1a4.chunk.js",
+    "static/media/Bill.png": "/Rajarajacholan11/novo.git/static/media/Bill.0b8858da4c92b8610d5c.png",
+    "static/media/network.jpg": "/Rajarajacholan11/novo.git/static/media/network.e44271ba8b265c6189c2.jpg",
+    "index.html": "/Rajarajacholan11/novo.git/index.html",
+    "main.e6c13ad2.css.map": "/Rajarajacholan11/novo.git/static/css/main.e6c13ad2.css.map",
+    "main.08117da4.js.map": "/Rajarajacholan11/novo.git/static/js/main.08117da4.js.map",
+    "453.45d9b1a4.chunk.js.map": "/Rajarajacholan11/novo.git/static/js/453.45d9b1a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.08117da4.js"
+  ]
+}
