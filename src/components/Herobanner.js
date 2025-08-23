@@ -1,6 +1,3 @@
-
-
-
 export default function HeroBanner({ imagesrc }) {
   return (
     <div className="relative bg-[rgba(65,121,74,255)] rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row items-center justify-between p-6 md:p-8">
@@ -18,15 +15,7 @@ export default function HeroBanner({ imagesrc }) {
         </button>
       </div>
 
-      {/* image */}
-      <div className="mt-6 md:mt-0 md:flex w-full md:w-1/2 justify-center lg:hidden">
-        <img
-          src={imagesrc}
-          alt="POS Illustration"
-          className="max-h-40 sm:max-h-52 md:max-h-64 object-contain"
-        />
-      </div>
-
+      {/* Image hidden on screens below lg */}
       <div className="hidden lg:flex absolute top-0 right-0 h-full w-1/2 overflow-hidden [clip-path:polygon(20%_0,100%_0,100%_100%,0_100%)]">
         <img
           src={imagesrc}
